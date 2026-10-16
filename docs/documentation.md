@@ -259,6 +259,6 @@ This lab demonstrates the relationship between Layer 2 VLAN segmentation and Lay
 
 [GitHub Profile](https://github.com/Victorin13)
 [LinkedIn Profile](https://www.linkedin.com/in/victorin-vodinou/)
-[Gmail Prifile](victorinvodinou@gmail.com)
+Gmail Prifile: victorinvodinou@gmail.com
 
 Networking | Systems Administration | Network Security
