@@ -1,0 +1,27 @@
+interface g0/1
+    description ## TO SW2 ##
+    no shutdown
+
+interface g0/1.10
+    description ## GATEWAY FOR VLAN 10 ##
+    encapsulation dot1q 10
+    ip address 10.0.0.62 255.255.255.192
+    no shutdown
+
+interface g0/1.20
+    description ## GATEWAY FOR VLAN 20 ##
+    encapsulation dot1q 20
+    ip address 10.0.0.126 255.255.255.192
+    no shutdown
+   
+interface g0/1.30
+    description ## GATEWAY FOR VLAN 30 ##
+    encapsulation dot1q 30
+    ip address 10.0.0.190 255.255.255.192
+    no shutdown
+    
+interface g0/1.1001
+    description ## GATEWAY FOR VLAN 1001 (NATIVE) ##
+    encapsulation dot1q 1001 native
+    ip address 10.0.0.254 255.255.255.192
+    no shutdown

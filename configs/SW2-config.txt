@@ -1,0 +1,32 @@
+vlan 10
+name IT 
+vlan 20
+name HR
+vlan 30
+name SALES
+
+interface range fa0/1-2
+    description ## IN VLAN 10 ##
+    switchport mode access
+    switchport nonegotiate
+    switchport access vlan 10
+
+interface fa0/3
+    description ## IN VLAN 20 ##
+    switchport mode access
+    switchport nonegotiate
+    switchport access vlan 20
+
+interface g0/2
+    description ## TO SW1 ##
+    switchport mode trunk
+    switchport nonegotiate
+    switchport trunk allowed vlan 10,30
+    switchport trunk native vlan 1001
+
+interface g0/1
+    description ## TO R1 ##
+    switchport mode trunk
+    switchport nonegotiate
+    switchport trunk allowed vlan 10,20,30
+    switchport trunk native vlan 1001

@@ -1,0 +1,4 @@
+# Fichiers temporaires
+*.log
+*.tmp
+config-file.txt
